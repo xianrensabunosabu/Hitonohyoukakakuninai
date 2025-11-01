@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>評価結果 - 人の評価測定AI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background-color: #0e0e0e;
+  color: #fff;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+  padding: 40px 10px;
+}
+.result-card {
+  background: #1b1b1b;
+  border-radius: 20px;
+  padding: 30px;
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 15px rgba(255,255,255,0.05);
+  text-align: left;
+  white-space: pre-wrap;
+}
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+a {
+  display: inline-block;
+  margin-top: 25px;
+  color: #8ab4f8;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+  <h1>✨ AI評価結果 ✨</h1>
+  <div class="result-card">
+    <strong>誰から：</strong> {{ person }}<br>
+    <strong>内容：</strong> {{ message }}<br><br>
+    {{ result }}
+  </div>
+  <a href="/">← もう一度分析する</a>
+</body>
+</html>

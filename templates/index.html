@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>人の評価測定AI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #0e0e0e;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+header {
+  width: 100%;
+  background: #1f1f1f;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+form {
+  background: #1b1b1b;
+  border-radius: 20px;
+  padding: 40px;
+  margin-top: 60px;
+  width: 90%;
+  max-width: 480px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.05);
+}
+input, textarea {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0 20px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  background: #121212;
+  color: #eee;
+  font-size: 1rem;
+}
+button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(100,100,255,0.4);
+}
+footer {
+  margin-top: auto;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+footer a {
+  color: #888;
+  text-decoration: none;
+}
+footer a:hover { color: #bbb; text-decoration: underline; }
+</style>
+</head>
+<body>
+  <header>💘 人の評価測定AI</header>
+  <form method="POST">
+    <label>誰から：</label>
+    <input type="text" name="person" placeholder="例：田中くん" required>
+    <label>どんな感じのメッセージ？：</label>
+    <textarea name="message" rows="4" placeholder="例：最近よく話しかけてくるようになった" required></textarea>
+    <button type="submit">AIで分析する</button>
+  </form>
+  <footer>
+    <a href="/terms">利用規約</a>
+  </footer>
+</body>
+</html>
